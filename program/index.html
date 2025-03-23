@@ -1,0 +1,815 @@
+---
+layout: default
+title: ACM ICEA 2024
+---
+
+<div class="container">
+  <div class="content">
+    <div>
+      <h2 style="color: #0000ff">ICEA 2024 Program at a Glance</h2>
+
+      <p style="text-align: justify">
+        Please find below the interactive program, or if you prefer, a PDF version of the full
+        program here:
+      </p>
+      <a href="ICEA-2024-program-all_v2.4.pdf" target="_blank">Full PDF Program</a>
+      <p style="text-align: justify">
+        <b>Please Note:</b> The program outlined below is tentative and subject to change. Updates
+        will be made as necessary, so please check back for the latest information.
+      </p>
+
+      <h2 style="color: #0000ff">Session Information</h2>
+
+      <!-- Session Information Tables -->
+      <style>
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 20px 0;
+          font-family: Arial, sans-serif;
+        }
+        td {
+          border: 1px solid #000;
+          text-align: center;
+          padding: 10px;
+        }
+        .header {
+          background-color: #d9d9d9;
+          font-weight: bold;
+        }
+        .time {
+          background-color: #f2f2f2;
+        }
+        .event-eneos2 {
+          background-color: #e2efda;
+        }
+        .event-eneos {
+          background-color: #fce4d6;
+        }
+        .event-registration {
+          background-color: #fff2cc;
+        }
+        .event-lunch {
+          background-color: #ddd9c3;
+        }
+        .event-reception {
+          background-color: #ddd9c3;
+        }
+        .dropdown-title {
+          cursor: pointer;
+          background-color: #f9cb9c;
+          color: #000;
+          font-weight: bold;
+          text-align: center;
+          padding: 10px;
+          border: 1px solid #000;
+        }
+        .dropdown-title.eneos2 {
+          background-color: #b6d7a8;
+        }
+        .dropdown-content {
+          display: none;
+        }
+      </style>
+
+      <script>
+        function scrollToSession(programId, titleId) {
+          const programTable = document.getElementById(programId);
+          const titleElement = document.getElementById(titleId);
+
+          // Scroll to the program table
+          programTable.scrollIntoView({ behavior: "smooth", block: "center" });
+
+          // Open the dropdown
+          const content = programTable.querySelector(".dropdown-content");
+          const indicator = titleElement.querySelector(".indicator");
+          if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "table-row-group";
+            indicator.textContent = "▲";
+          }
+        }
+
+        function toggleDropdown(id, title) {
+          const content = document.getElementById(id).querySelector(".dropdown-content");
+          const indicator = title.querySelector(".indicator");
+          if (content.style.display === "none" || content.style.display === "") {
+            content.style.display = "table-row-group";
+            indicator.textContent = "▲";
+          } else {
+            content.style.display = "none";
+            indicator.textContent = "▼";
+          }
+        }
+      </script>
+
+      <!-- November 28, 2024 -->
+      <table>
+        <tr>
+          <td colspan="2" class="header">November 28, 2024 (Thursday)</td>
+        </tr>
+        <tr>
+          <td class="time">09:00~09:30</td>
+          <td class="event-registration">
+            Registration, Coffee Service <br />
+            (RCAST - UTokyo)
+          </td>
+        </tr>
+        <tr>
+          <td class="time">09:30~10:00</td>
+          <td class="event-eneos">
+            <b>Opening Ceremony</b> <br />
+            (ENEOS Main Hall)
+          </td>
+        </tr>
+        <tr>
+          <td class="time">10:00~10:50</td>
+          <td
+            class="event-eneos"
+            onclick='window.open("https://icea-conf.github.io/2024/keynote/ma.htm", "_blank")'
+            style="cursor: pointer">
+            <b>Keynote Speech I</b> <br />
+            (ENEOS Main Hall)
+          </td>
+        </tr>
+        <tr>
+          <td class="time">11:00~11:50</td>
+          <td
+            class="event-eneos"
+            onclick='window.open("https://icea-conf.github.io/2024/keynote/chang.htm", "_blank")'
+            style="cursor: pointer">
+            <b>Keynote Speech II</b><br />
+            (ENEOS Main Hall)
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:00~12:50</td>
+          <td class="event-lunch">Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">13:00~14:30</td>
+          <td style="padding: 0">
+            <table style="width: 100%; border-collapse: collapse; margin: 0">
+              <tr>
+                <td
+                  class="event-eneos"
+                  style="border: none; border-right: 1px solid black; width: 50%; cursor: pointer"
+                  onclick="scrollToSession('session1', 'title1')">
+                  <b>Sessions 1</b><br />(ENEOS Main Hall)
+                </td>
+                <td
+                  class="event-eneos2"
+                  style="border: none; width: 50%; cursor: pointer"
+                  onclick="scrollToSession('session2', 'title2')">
+                  <b>Sessions 2</b><br />(ENEOS-2)
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">14:30~15:00</td>
+          <td class="event-registration">Coffee Break</td>
+        </tr>
+        <tr>
+          <td class="time">15:00~16:15</td>
+          <td
+            class="event-eneos"
+            style="cursor: pointer"
+            onclick="scrollToSession('session3', 'title3')">
+            <b>Sessions 3</b><br />(ENEOS Main Hall)
+          </td>
+        </tr>
+        <tr>
+          <td class="time">18:00~20:30</td>
+          <td class="event-reception">Reception<br />(Komaba II, UTokyo)</td>
+        </tr>
+      </table>
+
+      <!-- November 29, 2024 -->
+      <table>
+        <tr>
+          <td colspan="2" class="header">November 29, 2024 (Friday)</td>
+        </tr>
+        <tr>
+          <td class="time">09:30~10:00</td>
+          <td class="event-registration">Coffee Service</td>
+        </tr>
+        <tr>
+          <td class="time">10:00~10:50</td>
+          <td
+            class="event-eneos"
+            onclick='window.open("https://icea-conf.github.io/2024/keynote/Mao.htm", "_blank")'
+            style="cursor: pointer">
+            <b>Keynote Speech III</b><br />(ENEOS Main Hall)
+          </td>
+        </tr>
+        <tr>
+          <td class="time">11:00~11:50</td>
+          <td
+            class="event-eneos"
+            style="cursor: pointer"
+            onclick="scrollToSession('session4', 'title4')">
+            <b>Sessions 4</b><br />(ENEOS Main Hall)
+          </td>
+        </tr>
+        <tr>
+          <td class="time">12:00~12:50</td>
+          <td class="event-lunch">Lunch</td>
+        </tr>
+        <tr>
+          <td class="time">13:00~14:30</td>
+          <td style="padding: 0">
+            <table style="width: 100%; border-collapse: collapse; margin: 0">
+              <tr>
+                <td
+                  class="event-eneos"
+                  style="border: none; border-right: 1px solid black; width: 50%; cursor: pointer"
+                  onclick="scrollToSession('session5', 'title5')">
+                  <b>Sessions 5</b><br />(ENEOS Main Hall)
+                </td>
+                <td
+                  class="event-eneos2"
+                  style="border: none; width: 50%; cursor: pointer"
+                  onclick="scrollToSession('session6', 'title6')">
+                  <b>Sessions 6</b><br />(ENEOS-2)
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">14:30~15:00</td>
+          <td class="event-registration">Coffee Break</td>
+        </tr>
+        <tr>
+          <td class="time">15:00~16:15</td>
+          <td style="padding: 0">
+            <table style="width: 100%; border-collapse: collapse; margin: 0">
+              <tr>
+                <td
+                  class="event-eneos"
+                  style="border: none; border-right: 1px solid black; width: 50%; cursor: pointer"
+                  onclick="scrollToSession('session7', 'title7')">
+                  <b>Sessions 7</b><br />(ENEOS Main Hall)
+                </td>
+                <td
+                  class="event-eneos2"
+                  style="border: none; width: 50%; cursor: pointer"
+                  onclick="scrollToSession('session8', 'title8')">
+                  <b>Sessions 8</b><br />(ENEOS-2)
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="time">17:00~18:30</td>
+          <td class="event-eneos">Closing Ceremony<br />(ENEOS Main Hall - UTokyo)</td>
+        </tr>
+      </table>
+      <!-- Session Information Tables End -->
+
+      <p style="text-align: justify">
+        <b>Please Note:</b> For most sessions, the total time allocated is 17 minutes, which
+        includes a 15-minute presentation followed by a 2-minute Q&A. However, Session 4 has an
+        extended format with a total duration of 24 minutes, comprising a 20-minute presentation and
+        a 4-minute Q&A.
+      </p>
+
+      <img
+        src="ICEA-2024-timing.png"
+        alt="ICEA 2024 session information"
+        style="max-width: 100%; height: auto" />
+
+      <h2 style="color: #0000ff">Keynote Sessions</h2>
+
+      <h3
+        onclick='window.open("https://icea-conf.github.io/2024/keynote/ma.htm", "_blank")'
+        style="cursor: pointer">
+        <b>Keynote Session I: Lei MA</b>
+      </h3>
+
+      <h3
+        onclick='window.open("https://icea-conf.github.io/2024/keynote/chang.htm", "_blank")'
+        style="cursor: pointer">
+        <b>Keynote Session II: Victor CHANG</b>
+      </h3>
+
+      <h3
+        onclick='window.open("https://icea-conf.github.io/2024/keynote/Mao.htm", "_blank")'
+        style="cursor: pointer">
+        <b>Keynote Session III: Shiwen MAO</b>
+      </h3>
+      <div style="color: #f00; margin-left: 165px; margin-top: -18px">
+        <b
+          >Online keynote: <br />
+          <a
+            href="https://u-tokyo-ac-jp.zoom.us/j/81286389415?pwd=gEC7uGxZtZlgKQHaSyKbawC28BQf90.1"
+            target="_blank"
+            >https://u-tokyo-ac-jp.zoom.us/j/81286389415?pwd=gEC7uGxZtZlgKQHaSyKbawC28BQf90.1</a
+          ><br />
+          Meeting ID: 812 8638 9415 <br />
+          Passcode: 432208</b
+        >
+      </div>
+
+      <h2 style="color: #0000ff">Programs</h2>
+
+      <!-- Program tables -->
+      <style>
+        table {
+          width: 100%;
+          border-collapse: collapse;
+          margin: 20px 0;
+          font-family: Arial, sans-serif;
+        }
+        td {
+          border: 1px solid #000;
+          text-align: center;
+          padding: 10px;
+        }
+        th {
+          background-color: #ddd;
+          text-align: center;
+          padding: 10px;
+        }
+        .header {
+          background-color: #d9d9d9;
+          font-weight: bold;
+        }
+        .dropdown-title {
+          cursor: pointer;
+          background-color: #f9cb9c; /* Default for ENEOS Main Hall */
+          color: #000;
+          font-weight: bold;
+          text-align: center;
+          padding: 10px;
+          border: 1px solid #000;
+          width: 100%;
+        }
+        .dropdown-title.eneos2 {
+          background-color: #b6d7a8; /* For ENEOS 2 */
+        }
+        .dropdown-content {
+          display: none;
+        }
+        .dropdown-content td {
+          border: 1px solid #000;
+          padding: 10px;
+          text-align: center;
+        }
+        .eneos-main {
+          background-color: #fce4d6;
+        }
+        .eneos2 {
+          background-color: #e2efda;
+        }
+      </style>
+
+      <table class="dropdown-table" id="session1">
+        <tr class="dropdown-title" id="title1" onclick="toggleDropdown('session1', this)">
+          <td colspan="2">
+            Session 1: Smart Home and Smart City
+            <span class="indicator" style="float: right">▼</span>
+          </td>
+        </tr>
+        <tbody id="session1" class="dropdown-content">
+          <tr>
+            <th style="border: 1px solid black">Paper No.</th>
+            <th style="border: 1px solid black">Title and Authors</th>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000018</td>
+            <td>
+              <b
+                >An Effective Vehicle Trajectory Restoration Algorithm by Using Center Trajectory</b
+              >
+              <br />
+              Yung-Hao Shiau, Chih-Chieh Hung, Chun-Wei Tsai
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000016</td>
+            <td>
+              <b>
+                Connected Shared Spaces: Expert Insights Into the Impact of eHMI and SPIU for
+                Next-Generation Pedestrian-AV Communication
+              </b>
+              <br />
+              Vishal Chauhan, Anubhav Anubhav, Chia-Ming Chang, Jin Nakazato, Ehsan Javanmardi, Alex
+              Orsholits, Takeo Igarashi, Kantaro Fujiwara, Manabu Tsukada
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000052</td>
+            <td>
+              <b
+                >PLATONE: Assessing Simulation Accuracy of Environment-Dependent Audio
+                Spatialization</b
+              >
+              <br />
+              Alex Orsholits, Eric Nardini, Manabu Tsukada
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000022</td>
+            <td>
+              <b>
+                Generating Spatially-Aware Dense Video Captions for Indoor Human Behavior Analysis
+                With Position-Based Scene Knowledge
+              </b>
+              <br />
+              Bin Chen, Yugo Nakamura, Shogo Fukushima, Yutaka Arakawa
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000026</td>
+            <td>
+              <b>Neural Error Covariance Estimation for Precise LiDAR Localization</b>
+              <br />
+              Minoo Dolatabadi, Fardin Ayar, Ehsan Javanmardi, Manabu Tsukada, Mahdi Javanmardi
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dropdown-table" id="session2">
+        <tr class="dropdown-title eneos2" id="title2" onclick="toggleDropdown('session2', this)">
+          <td colspan="2">
+            Session 2: Security and Privacy, Big Data
+            <span class="indicator" style="float: right">▼</span>
+          </td>
+        </tr>
+        <tbody id="session2" class="dropdown-content">
+          <tr>
+            <th style="border: 1px solid black">Paper No.</th>
+            <th style="border: 1px solid black">Title and Authors</th>
+          </tr>
+          <tr class="eneos2">
+            <td>C000030</td>
+            <td>
+              <b>
+                Identification of First-Level National Protected Animals Based on YOLOv5 and YOLOv8
+                Algorithms
+              </b>
+              <br />
+              Haoyu Wang, Ta-Wen Kuan, Xiaodong Yu
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000024</td>
+            <td>
+              <b>Geographic-Aware Network Analysis and Visualization System for CAVs</b>
+              <br />
+              Koichi Kambara, Ehsan Javanmardi, Jin Nakazato, Shunya Yamada, Hiroaki Takada, Yousuke
+              Watanabe, Kenya Sato, Manabu Tsukada
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000010</td>
+            <td>
+              <b>
+                OAuth 2.0 Authentication Framework With Context-Based Risk Assessment for AI
+                Chatbot-Based RPA
+              </b>
+              <br />
+              Soonhong Kwon, Wooyoung Son, Jong-Hyouk Lee
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000021</td>
+            <td>
+              <b>
+                An Effective Text Data Augmentation Method for Filtering Inappropriate Webpages
+              </b>
+              <br />
+              You-Cheng Chen, Cheng-Han Hsieh, Shou-Chuan Lai, Whai-En Chen, Chun-Wei Tsai
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dropdown-table" id="session3">
+        <tr class="dropdown-title" id="title3" onclick="toggleDropdown('session3', this)">
+          <td colspan="2">
+            Session 3: Deep Learning and Intelligent System
+            <span class="indicator" style="float: right">▼</span>
+          </td>
+        </tr>
+        <tbody id="session3" class="dropdown-content">
+          <tr>
+            <th style="border: 1px solid black">Paper No.</th>
+            <th style="border: 1px solid black">Title and Authors</th>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000036</td>
+            <td>
+              <b
+                >Cross-Attention Enhanced Imitation Learning for End-to-End Autonomous Driving in
+                Unprotected Turns</b
+              >
+              <br />
+              Dongyang Li, Ehsan Javanmardi, Naren Bao, Manabu Tsukada
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000040</td>
+            <td>
+              <b>Exploring LLM Architecture for Generating Cypher Queries</b>
+              <br />
+              Dimitrios Giakatos, Romain Fontugne
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000011</td>
+            <td>
+              <b>Secure User-to-Chatbot Authentication Using One-Time Session Keys Based on DID</b>
+              <br />
+              Wooyoung Son, Soonhong Kwon, Jong-Hyouk Lee
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000014</td>
+            <td>
+              <b
+                >iTOChat2024: Development and Evaluation of a Department Recommendation Bot for Open
+                Campus</b
+              >
+              <br />
+              Sho Futamura, Isshin Nakao, Shusaku Kita, Ryusei Fujimoto, Tsunenori Mine
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dropdown-table" id="session4">
+        <tr class="dropdown-title" id="title4" onclick="toggleDropdown('session4', this)">
+          <td colspan="2">
+            Session 4: Deep Learning and Intelligent System
+            <span class="indicator" style="float: right">▼</span>
+          </td>
+        </tr>
+        <tbody id="session4" class="dropdown-content">
+          <tr>
+            <th style="border: 1px solid black">Paper No.</th>
+            <th style="border: 1px solid black">Title and Authors</th>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000044</td>
+            <td>
+              <b
+                >TimeSync: GAN-Driven Temporal Feature Synchronization for Robust Collaborative
+                Perception in Autonomous Driving</b
+              >
+              <br />
+              Yalong Li, Zhaoyang Du, Rui Yin, Wugedele Bao, Ha Si, Celimuge Wu
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000028</td>
+            <td>
+              <b>LiDAR-Camera Fusion for Video Panoptic Segmentation Without Video Training</b>
+              <br />
+              Fardin Ayar, Ehsan Javanmardi, Manabu Tsukada, Mahdi Javanmardi, Mohammad Rahmati
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dropdown-table" id="session5">
+        <tr class="dropdown-title" id="title5" onclick="toggleDropdown('session5', this)">
+          <td colspan="2">
+            Session 5: Deep Learning, Intelligent System, and Augmented Reality
+            <span class="indicator" style="float: right">▼</span>
+          </td>
+        </tr>
+        <tbody id="session5" class="dropdown-content">
+          <tr>
+            <th style="border: 1px solid black">Paper No.</th>
+            <th style="border: 1px solid black">Title and Authors</th>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000015</td>
+            <td>
+              <b>
+                Mining Cross-Level Frequent Weighted Closed Itemsets in Hierarchical Quantitative
+                Databases
+              </b>
+              <br />
+              Jimmy Ming-Tai Wu, Tian-Yi Guo, Chun-Wei Tsai
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000031</td>
+            <td>
+              <b>Where Do You Go? Pedestrian Trajectory Prediction Using Scene Features</b>
+              <br />
+              Mohammad Ali Rezaei, Fardin Ayar, Ehsan Javanmardi, Manabu Tsukada, Mahdi Javanmardi
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000046</td>
+            <td>
+              <b>Design of an Orchestrator for Network-Controlled Repeaters</b>
+              <br />
+              Takuya Takahashi, Jin Nakazato, Kazuki Maruta, Arokia Nathan, S. B Cha
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000041</td>
+            <td>
+              <b>
+                UAV Autonomous Control Using Multi-Agent Reinforcement Learning in a Cooperative
+                Control UAV Network
+              </b>
+              <br />
+              Hideya So, Jin Nakazato
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000039</td>
+            <td>
+              <b
+                >3D Object Detection Enhancement Based on Multi-Frame Point Cloud Registration
+                (MF-PCR)</b
+              >
+              <br />
+              Jun-Rui Wang, Hsiang-Jui Lin, Chi-Sheng Shih
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dropdown-table" id="session6">
+        <tr class="dropdown-title eneos2" id="title6" onclick="toggleDropdown('session6', this)">
+          <td colspan="2">
+            Session 6: Intelligent of Things and Augmented Reality
+            <span class="indicator" style="float: right">▼</span>
+          </td>
+        </tr>
+        <tbody id="session6" class="dropdown-content">
+          <tr>
+            <th style="border: 1px solid black">Paper No.</th>
+            <th style="border: 1px solid black">Title and Authors</th>
+          </tr>
+          <tr class="eneos2">
+            <td>C000029</td>
+            <td>
+              <b>
+                Research on the Human-Style Generation Mechanism of Large Language Models Based on
+                Prompt Tuning—Optimization and Evaluation of AI Detectors Under the SICO Method
+              </b>
+              <br />
+              Jiawei Ding, Lingyue Pan, Xinrong Zhu, Ying Chen
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000035</td>
+            <td>
+              <b>MR Kabuki: Mixed Reality Enabled Performing Arts</b>
+              <br />
+              Soko Aoki, Akinori Inada, Masashi Tomita
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000012</td>
+            <td>
+              <b>
+                Digital Twin Based Open Platform for IoT Offloading Control: Enabling System
+                Transparency and User Participation
+              </b>
+              <br />
+              Yusuke Sugizaki, Jin Nakazato, Manabu Tsukada
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000032</td>
+            <td>
+              <b>An Accurate Weight Classification System for Live Fishes</b>
+              <br />
+              Whai-En Chen
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000019</td>
+            <td>
+              <b
+                >An Effective Metaheuristic-Based Structured Pruning Method for Transformer in
+                Short-Term Load Forecasting</b
+              >
+              <br />
+              Luo-Fan Wu, Gagan Vishwakarma, Chun-Wei Tsai
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dropdown-table" id="session7">
+        <tr class="dropdown-title" id="title7" onclick="toggleDropdown('session7', this)">
+          <td colspan="2">
+            Session 7: Machine Learning and Data Mining
+            <span class="indicator" style="float: right">▼</span>
+          </td>
+        </tr>
+        <tbody id="session7" class="dropdown-content">
+          <tr>
+            <th style="border: 1px solid black">Paper No.</th>
+            <th style="border: 1px solid black">Title and Authors</th>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000034</td>
+            <td>
+              <b> Classroom Behavior Identification and Analysis Based on ResNet-50 and YOLOv5 </b>
+              <br />
+              Xin Guo, Zi Yue Wang, Xuan Sun, Ping Dong, Yi Yang
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000020</td>
+            <td>
+              <b>A Training-Free Neural Architecture Search for Electricity Load Prediction</b>
+              <br />
+              Ting-Hsuan Pei, Chun-Wei Tsai
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000027</td>
+            <td>
+              <b>Unsupervised Person Re-Identification Using Generative Adversarial Networks</b>
+              <br />
+              Romina Zakerian, Ehsan Javanmardi, Manabu Tsukada, Mahdi Javanmardi, Mohammad Rahmati
+            </td>
+          </tr>
+          <tr class="eneos-main">
+            <td>C000017</td>
+            <td>
+              <b>Paired-Data Transformations for Weather-Affected Images</b>
+              <br />
+              Jung Hwan Kim, Dong Seog Han
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="dropdown-table" id="session8">
+        <tr class="dropdown-title eneos2" id="title8" onclick="toggleDropdown('session8', this)">
+          <td colspan="2">
+            Session 8: Intelligent Networks and Mobile Computing
+            <span class="indicator" style="float: right">▼</span>
+          </td>
+        </tr>
+        <tbody id="session8" class="dropdown-content">
+          <tr>
+            <th style="border: 1px solid black">Paper No.</th>
+            <th style="border: 1px solid black">Title and Authors</th>
+          </tr>
+          <tr class="eneos2">
+            <td>C000023</td>
+            <td>
+              <b>
+                Toward 6G Mobility Networks: A Proposal for Cell-Free Cooperative Distributed
+                Beamforming
+              </b>
+              <br />
+              Jin Nakazato, Sojin Ozawa, Yuki Sasaki, Kengo Suzuki, Kazuki Maruta, Tetsuya Iye, Yuki
+              Susukida, Eisaku Sato, Manabu Tsukada
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000047</td>
+            <td>
+              <b>
+                Design of Network-Controlled Repeater Deployment Toward mmWave Coverage Enhancement
+              </b>
+              <br />
+              Taisei Miyaoka, Yuki Sasaki, Kazuki Maruta, Jin Nakazato, Arokia Nathan, S. B Cha
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000033</td>
+            <td>
+              <b>
+                Redundancy Mitigation Rules Considering Vehicle Driving Environment for Collective
+                Perception Messages
+              </b>
+              <br />
+              Shinya Yamasaki, Onur Alparslan, Kenya Sato
+            </td>
+          </tr>
+          <tr class="eneos2">
+            <td>C000045</td>
+            <td>
+              <b>
+                Performance Analysis of Collaborative Uplink MIMO Transmission Considering Signaling
+                Overhead
+              </b>
+              <br />
+              Anbo Yue, Kazuki Maruta
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <!-- Program tables end -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACM ICEA 2025 - La Trobe University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .container-fluid {
+            padding: 40px;
+            background: #fff;
+        }
+        .navbar {
+            background-color: #004080;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            transition: top 0.3s;
+        }
+        .navbar a {
+            color: white !important;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(90deg, #4A90E2, #50C878, #4A90E2);
+            background-size: 300% 300%;
+            animation: animatedBackground 6s infinite alternate;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            position: relative;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        @keyframes animatedBackground {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px; /* 1cm gap */
+            animation: marquee 10s linear infinite;
+        }
+        .hero-content img {
+            max-height: 100px;
+        }
+        .hero-content p {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+            color: white;
+        }
+        @keyframes marquee {
+            from { transform: translateX(100%); }
+            to { transform: translateX(-100%); }
+        }
+        .important-dates {
+            background: #007bff;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+        .important-dates table {
+            width: 100%;
+            color: white;
+        }
+        .important-dates td {
+            padding: 10px;
+        }
+        .supporters img, .sponsors img {
+            width: 150px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .supporters img:hover, .sponsors img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">ACM ICEA 2025</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#important-dates">Important Dates</a></li>
+					<li class="nav-item"><a class="nav-link" href="committee/index.html">Conference Committee</a></li>
+					<li class="nav-item"><a class="nav-link" href="papers/index.html">Call for Papers</a></li>
+					
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid text-center">
+        <div class="hero">
+            <div class="hero-content">
+                <img src="image/La_Trobe_University_logo.jpg" alt="La Trobe University Logo">
+                <p>November 28 – 29, 2024</p>
+            </div>
+        </div>
+
+        <img src="image/ICEA2024.JPG" class="img-fluid rounded mt-4" alt="ICEA 2024 Conference Banner">
+        
+		
+		 <div id="important-dates" class="important-dates mt-5">
+            <h3>Important Dates</h3>
+            <table class="table table-bordered">
+                <tbody>
+                    <tr><td><strong>Submission Due Date:</strong></td> <td>August 31, 2024 | October 20, 2024, 23:59 AoE (Anywhere on Earth)</td></tr>
+                    <tr><td><strong>Notification of Acceptance Date:</strong></td> <td>October 1, 2024 | November 5, 2024</td></tr>
+                    <tr><td><strong>Final Paper Submission Date:</strong></td> <td>October 7, 2024 | November 15, 2024</td></tr>
+                    <tr><td><strong>Early Registration Deadline:</strong></td> <td>November 1, 2024 | November 15, 2024</td></tr>
+                    <tr><td><strong>Conference:</strong></td> <td>November 28 – 29, 2024</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+		
+		
+        <div id="supporters" class="mt-5">
+            <h3>Supporters</h3>
+            <div class="supporters d-flex justify-content-center gap-4 flex-wrap">
+                <div>
+                    <img src="https://icea-conf.github.io/2024/image/support/tacc.png" alt="TACC">
+                    <p><a href="https://hpc.asia.edu.tw/tacc/" target="_blank">Taiwan Cloud Computing Association</a></p>
+                </div>
+                <div>
+                    <img src="https://icea-conf.github.io/2024/image/support/wide.png" alt="WIDE">
+                    <p><a href="https://www.wide.ad.jp/" target="_blank">WIDEプロジェクト</a></p>
+                </div>
+                <div>
+                    <img src="https://icea-conf.github.io/2024/image/support/icps-logo-square.jpg" alt="ACM ICPS">
+                    <p><a href="https://www.acm.org/publications/icps" target="_blank">ACM International Conference Proceedings Series</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="sponsors" class="mt-5">
+            <h3>Sponsors</h3>
+            <div class="sponsors d-flex justify-content-center gap-4 flex-wrap">
+                <div>
+                    <img src="https://icea-conf.github.io/2024/image/sponsor/HW_POS_RGB_Horizontal.jpg" alt="Huawei">
+                    <p><a href="https://www.huawei.com" target="_blank">Huawei</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

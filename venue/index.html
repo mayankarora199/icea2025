@@ -1,0 +1,345 @@
+---
+layout: mapbox
+title: ACM ICEA 2024
+---
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
+<div class="container">
+  <div class="content">
+    <div>
+      <h2 style="color: #0000ff">Conference Venue</h2>
+      <p style="font-weight: bold; font-size: 1.25em">ENEOSホール (ENEOS Hall)</p>
+      <p>
+        The conference will be held at ENEOS Hall, located in the RCAST Building 3-South on the
+        University of Tokyo's Komaba II campus. The campus is situated near the vibrant Shibuya
+        City, offering convenient access to various transportation options and amenities.
+      </p>
+      <p>
+        Address: RCAST Building 3-South, 4 Chome-6-1 Komaba, Meguro City, Tokyo 153-0041<br />
+        <a href="https://maps.app.goo.gl/sBsmA3YCYw87kdVW6" target="_blank">View on Google Maps</a>
+      </p>
+
+      <div style="display: flex; justify-content: space-between">
+        <img
+          src="https://icea-conf.github.io/2024/image/venue_photo1.jpg"
+          alt="Venue Photo 1"
+          class="expandable-image"
+          style="width: 32%; height: auto" />
+        <img
+          src="https://icea-conf.github.io/2024/image/venue_photo2.jpg"
+          alt="Venue Photo 2"
+          class="expandable-image"
+          style="width: 32%; height: auto" />
+        <img
+          src="https://icea-conf.github.io/2024/image/venue_photo3.jpg"
+          alt="Venue Photo 3"
+          class="expandable-image"
+          style="width: 32%; height: auto" />
+      </div>
+
+      <h2 style="color: #0000ff">Access Map</h2>
+      <p>
+        The venue is conveniently accessible from two major stations in Tokyo—Shinjuku Station and
+        Shibuya Station—each offering easy connections to nearby stations via the Odakyu and
+        Inokashira Lines. Below are the recommended routes for reaching the venue.
+      </p>
+
+      <h3>From Shinjuku Station (via the Odakyu Line)</h3>
+      <ul>
+        <li>
+          Take the <strong>Odakyu Line</strong> from
+          <strong>Shinjuku Odakyu Station (OH01)</strong>. For a direct connection to the venue, it
+          is recommended to take the <strong>local train</strong> to
+          <strong>Higashi-Kitazawa Station (OH06)</strong>. From this station, it is a
+          <strong>700-meter walk (10 minutes)</strong> to the venue's entrance.
+        </li>
+        <li>
+          If you board a <strong>semi-express</strong>, <strong>rapid express</strong>, or
+          <strong>express train</strong> (which does not stop at Higashi-Kitazawa), get off at
+          <strong>Yoyogi-Uehara Station (OH05)</strong>, which is a
+          <strong>1.1 km walk (16 minutes)</strong> to the venue.
+        </li>
+        <li>
+          The fastest commute from <strong>Shinjuku Station</strong> to the venue takes
+          <strong>just under 20 minutes</strong>.
+        </li>
+      </ul>
+
+      <h3>From Shibuya Station (via the Inokashira Line)</h3>
+      <ul>
+        <li>
+          Take the <strong>Inokashira Line</strong> from
+          <strong>Shibuya Inokashira Station (IN01)</strong>. Please note that only
+          <strong>local trains</strong> stop at the required stations—<strong
+            >express trains should be avoided</strong
+          >.
+        </li>
+        <li>
+          You have two station options:
+          <ul>
+            <li>
+              <strong>Komaba-Todaimae Station (IN03)</strong>: Located near the main Komaba I
+              campus. From this station, it is an <strong>850-meter walk (13 minutes)</strong> to
+              the venue on Komaba II campus.
+            </li>
+            <li>
+              <strong>Ikenoue Station (IN04)</strong>: Located one stop after Komaba-Todaimae. It is
+              a <strong>650-meter walk (9 minutes)</strong> to the venue.
+            </li>
+          </ul>
+        </li>
+        <li>
+          The fastest commute from <strong>Shibuya Station</strong> to the venue is
+          <strong>just under 15 minutes</strong>.
+        </li>
+      </ul>
+
+      <h3>Interactive Access Map Features</h3>
+      <ul>
+        <li>The venue building is marked in <strong style="color: magenta">magenta</strong>.</li>
+        <li>Recommended station exits are marked with a <strong>rocket icon</strong>.</li>
+        <li>Stations and pedestrian paths from all nearby stations are highlighted.</li>
+        <li>Recommended hotels near the venue are marked with <strong>heart icons</strong>.</li>
+        <li>
+          The <strong>Odakyu Line</strong> is displayed in
+          <strong style="color: #0066cc">medium blue</strong>, and the
+          <strong>Inokashira Line</strong> is in <strong style="color: #003366">dark blue</strong>,
+          the official colors of the lines.
+        </li>
+        <li>
+          <strong>Shinjuku Station</strong> and <strong>Shibuya Station</strong> are major
+          transportation hubs, making it easy to reach the venue from any location within Tokyo.
+        </li>
+      </ul>
+
+      <p>
+        Use the interactive map below to explore routes from these stations, highlighted paths, and
+        recommended hotel locations.
+      </p>
+
+      <p>
+        For additional directions, please visit
+        <a href="https://www.rcast.u-tokyo.ac.jp/en/access.html" target="_blank"
+          >The University of Tokyo's official access guide</a
+        >.
+      </p>
+
+      <div id="map" style="height: 600px"></div>
+
+      <h2 style="color: #0000ff">Hotel Recommendations</h2>
+      <p>
+        Tokyo offers excellent transportation options, making it easy to stay in a variety of
+        locations within the city while still commuting effortlessly to the venue. However, to make
+        your stay as convenient as possible, we have recommended four hotels near Shibuya Station,
+        which will minimize your commute time.
+      </p>
+
+      <p>
+        For example, here are a couple of typical commute times from other major stations to the
+        venue:
+      </p>
+
+      <ul>
+        <li>
+          <strong>From Tokyo Station</strong>: Take the Tokyo Metro Chiyoda Line from
+          <strong>Nijubashimae Station</strong> to <strong>Higashi-Kitazawa Station</strong>. The
+          total time to the venue is approximately <strong>35 minutes</strong>.
+        </li>
+        <li>
+          <strong>From Shinagawa Station</strong>: Take the JR Yamanote Line to
+          <strong>Shibuya Station</strong>, then transfer to the Inokashira Line and arrive at
+          <strong>Ikenoue Station</strong>. The total time to the venue is approximately
+          <strong>33 minutes</strong>.
+        </li>
+      </ul>
+
+      <h3>Recommended Hotels Near Shibuya Station</h3>
+
+      <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px">
+        <!-- Hotel 1 -->
+        <div>
+          <h4>Shibuya Excel Hotel Tokyu</h4>
+          <p>Price: ~50,000 JPY (330-350 USD/Day)</p>
+          <p>
+            <a href="https://www.tokyuhotels.co.jp/en/shibuya-e/index.html" target="_blank"
+              >Official hotel website</a
+            >
+          </p>
+          <p>1 Chome-12-2 Dogenzaka, Shibuya City, Tokyo 150-0043</p>
+          <p><a href="https://maps.app.goo.gl/n128toWL5Bg4fozS9" target="_blank">Google Maps</a></p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1728933855007!6m8!1m7!1s-Yz4vOlVwI13j0Zkb7birA!2m2!1d35.65901660376748!2d139.7002054068926!3f227.0246523400114!4f35.933593723134834!5f0.5686882457524172"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Hotel 2 -->
+        <div>
+          <h4>Sequence MIYASHITA PARK / Shibuya</h4>
+          <p>Price: ~30,000 JPY (150-200 USD/Day)</p>
+          <p>
+            <a href="https://www.sequencehotels.com/miyashita-park/eng/" target="_blank"
+              >Official hotel website</a
+            >
+          </p>
+          <p>6 Chome−20−10 Jingumae, Shibuya City, Tokyo 150-0001</p>
+          <p><a href="https://maps.app.goo.gl/MDKZtX9UkqZdya3V6" target="_blank">Google Maps</a></p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1728933677835!6m8!1m7!1sRxlZngYdi_I0EX8uwLb8lQ!2m2!1d35.66350508943506!2d139.7020811173726!3f221.80589326795894!4f33.597739848366245!5f0.5097942508781003"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Hotel 3 -->
+        <div>
+          <h4>JR East Hotel Mets Shibuya</h4>
+          <p>Price: ~30,000 JPY (150-200 USD/Day)</p>
+          <p>
+            <a href="https://www.hotelmets.jp/en/shibuya/" target="_blank"
+              >Official hotel website</a
+            >
+          </p>
+          <p>3 Chome-29-17 Shibuya, Shibuya City, Tokyo 150-0002</p>
+          <p><a href="https://maps.app.goo.gl/yiaBZTt5WXs5Xf699" target="_blank">Google Maps</a></p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1728933767263!6m8!1m7!1ssA4p2FptF3KCFhqUtxiNUQ!2m2!1d35.65589024239517!2d139.7043414761997!3f248.07138396148824!4f27.612036166001175!5f0.5688783201475625"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <!-- Hotel 4 -->
+        <div>
+          <h4>All Day Place Shibuya</h4>
+          <p>Price: ~30,000 JPY (150-200 USD/Day)</p>
+          <p>
+            <a href="https://www.uds-hotels.com/en/all-day-place/" target="_blank"
+              >Official hotel website</a
+            >
+          </p>
+          <p>1 Chome-17-1 Shibuya, Shibuya City, Tokyo 150-0002</p>
+          <p><a href="https://maps.app.goo.gl/XL9FdcML8brfvJaVA" target="_blank">Google Maps</a></p>
+        </div>
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!4v1728933917062!6m8!1m7!1sqy61ceSfZ0KdGZPSaAnS6g!2m2!1d35.66166304995365!2d139.7029620011409!3f148.8067441501731!4f29.35989471435009!5f0.4000000000000002"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <!-- Modal for image expansion -->
+      <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImage" />
+      </div>
+
+      <script>
+        mapboxgl.accessToken =
+          "pk.eyJ1IjoibWVoMzAxIiwiYSI6ImNtMjk5d3RvbTAzaTYyaXF1N2Z2dHhjdzUifQ.FEtNldSUdlfew9FoKkoeag";
+        const map = new mapboxgl.Map({
+          container: "map", // container ID
+          style: "mapbox://styles/meh301/cm294lgcg00lz01om1o8be1dt",
+          center: [139.689, 35.674],
+          zoom: 13,
+        });
+        map.addControl(new mapboxgl.NavigationControl());
+
+        // Popup Gallery Script
+        var modal = document.getElementById("imageModal");
+        var modalImg = document.getElementById("modalImage");
+        var closeBtn = document.getElementsByClassName("close")[0];
+
+        // Add event listeners for all images with the class 'expandable-image'
+        document.querySelectorAll(".expandable-image").forEach(function (img) {
+          img.onclick = function () {
+            modal.style.display = "block";
+            modalImg.src = this.src; // Set the modal image to the clicked image
+          };
+        });
+
+        // Close the modal when the 'X' button is clicked
+        closeBtn.onclick = function () {
+          modal.style.display = "none";
+        };
+
+        // Close the modal when clicking outside the image
+        modal.onclick = function (event) {
+          if (event.target === modal) {
+            modal.style.display = "none";
+          }
+        };
+      </script>
+
+      <style>
+        /* Modal (popup) styles */
+        .modal {
+          display: none;
+          position: fixed;
+          z-index: 100;
+          padding-top: 60px;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.9);
+        }
+
+        /* Modal image */
+        .modal-content {
+          margin: auto;
+          display: block;
+          max-width: 80%;
+          max-height: 80%;
+        }
+
+        /* Close button */
+        .close {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          color: white;
+          font-size: 40px;
+          font-weight: bold;
+          cursor: pointer;
+        }
+
+        /* Animation for modal content */
+        .modal-content {
+          animation-name: zoom;
+          animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+          from {
+            transform: scale(0);
+          }
+          to {
+            transform: scale(1);
+          }
+        }
+      </style>
+    </div>
+  </div>
+</div>
